@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    card_view:contentPadding="7dp"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="7dp"
+    card_view:cardBackgroundColor="#FF9800"
+    android:layout_margin="2dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="TEXT VIEW"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvalue"
+            android:layout_alignBottom="@+id/tvalue"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:text="TOTAL CLASSES -" />
+
+        <TextView
+            android:id="@+id/tvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="42dp"
+            android:layout_toEndOf="@+id/total"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/absent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvalue"
+            android:layout_alignBottom="@+id/tvalue"
+            android:layout_toStartOf="@id/avalue"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="bottom"
+            android:text="Absent" />
+
+        <TextView
+            android:id="@+id/avalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="42dp"
+            android:layout_alignParentEnd="true"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/subject"
+
+            android:paddingLeft="20dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text=""
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/pvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/percent"
+            android:layout_alignBottom="@+id/percent"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="TextView" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
